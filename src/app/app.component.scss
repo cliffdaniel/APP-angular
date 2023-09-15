@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  padding: 0;
+
+  .sidebar {
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+    left: 0;
+    top: 70px;
+    bottom: 0;
+    right: 0;
+  }
+
+  .main {
+    margin-left: 250px;
+    width: 100%;
+    padding: 30px 60px;
+    height: calc(100vh - 125px);
+  }
+}

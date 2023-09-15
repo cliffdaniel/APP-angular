@@ -1,0 +1,11 @@
+.tasks-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+
+  h1 {
+    margin-bottom: 0;
+    font-weight: bold;
+  }
+}

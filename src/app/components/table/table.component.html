@@ -1,0 +1,49 @@
+<div class="card-container">
+  <div class="status-column status-column-pending">
+    <h2>Pending</h2>
+    <div class="card-list">
+      <mat-card class="card card-pending" *ngFor="let task of tasksByStatus['pending']">
+        <div class="flex justify-between">
+          <h3>{{ task.title }}</h3>
+          <div>
+            <mat-icon aria-hidden="false" aria-label="Edit Task" (click)="openTaskModal(task)">edit</mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Delete Task">delete</mat-icon>
+          </div>
+        </div>
+        <p>{{ task.description }}</p>
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="status-column status-column-in-progress">
+    <h2>In Progress</h2>
+    <div class="card-list">
+      <mat-card class="card card-in-progress" *ngFor="let task of tasksByStatus['in-progress']">
+        <div class="flex justify-between">
+          <h3>{{ task.title }}</h3>
+          <div>
+            <mat-icon aria-hidden="false" aria-label="Edit Task" (click)="openTaskModal(task)">edit</mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Delete Task">delete</mat-icon>
+          </div>
+        </div>
+        <p>{{ task.description }}</p>
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="status-column status-column-complete">
+    <h2>Complete</h2>
+    <div class="card-list">
+      <mat-card class="card card-complete" *ngFor="let task of tasksByStatus['complete']">
+        <div class="flex justify-between">
+          <h3>{{ task.title }}</h3>
+          <div>
+            <mat-icon aria-hidden="false" aria-label="Edit Task" (click)="openTaskModal(task)">edit</mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Delete Task">delete</mat-icon>
+          </div>
+        </div>
+        <p>{{ task.description }}</p>
+      </mat-card>
+    </div>
+  </div>
+</div>
